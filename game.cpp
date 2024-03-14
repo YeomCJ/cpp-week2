@@ -4,7 +4,9 @@ int game(int a, int b, int c) {
 
     int Asarray[3] = {a,b,c};
     
-    while (true) {
+    int count = 5;
+    while (count) {
+    std::cout <<  count << " chances left." << '\n';
     int strike = 0, ball = 0;
     int d,e,f;
     
@@ -30,5 +32,7 @@ int game(int a, int b, int c) {
     }
     else
         std::cout << "Strikes: " << strike << ", Balls: " << ball << '\n';
+    count--;
     }
+    std::cout << "You lose!" << '\n';
 }
